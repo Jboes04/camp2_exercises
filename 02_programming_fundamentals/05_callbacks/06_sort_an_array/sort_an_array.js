@@ -7,8 +7,14 @@
 // Note: You should not use Array.sort()
 
 function sort(unsortedArray) {
-  // Your code here
+  let array1= [];
+  let result= "";
+  for (let i =0; i <= unsortedArray; i++) {
+    result = array1 ;
+  }
+  return result;
 }
+console.log(sort(24,2,11));
 
 // Do not remove last lines, it is for tests
 // eslint-disable-next-line

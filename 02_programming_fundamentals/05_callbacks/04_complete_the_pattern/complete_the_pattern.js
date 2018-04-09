@@ -32,10 +32,22 @@
 // 10101010101010101010
 // 1111111111111111111111
 // ```
+function one (num1) {
+  let result = "";
+  for (let i= 0; i < num1 ; i++) {
+    result += num1;
+  }
+  return result;
+}
 
 function pattern(size) {
-  // Your code here
+  let result = "";
+  for (let i= 1; i <= size ; i++ ) {
+    result += one(i) + "\n";
+  }
+  return result.trim();
 }
+console.log(pattern(12));
 
 // Do not remove last lines, it is for tests
 // eslint-disable-next-line
