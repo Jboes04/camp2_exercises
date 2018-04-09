@@ -4,8 +4,8 @@
 // This function should work in both ascending or descending order.
 
 // Complete this function.
-function range() {
-
+function hello() {
+  console.log("Hello World!");
 }
 
 // Do not remove last lines, it is for tests
