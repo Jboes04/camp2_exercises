@@ -8,10 +8,23 @@
 
    YOU MUST USE array.map
 */
-
-function fizzBuzz(list) {
-
+function fizzBuzzNumber(number) {
+  let result;
+  if (number % 15 === 0) {
+    result = "FizzBuzz";
+  } else if (number % 3 === 0) {
+    result = "Fizz";
+  } else if ( number % 5 === 0) {
+    result = " Buzz";
+  } else {
+    result = number;
+  }
+  return result;
 }
-
+function fizzBuzz (list) {
+  restur list.map(fizzBuzzNumber);
+}
+let listTest = [1,2,3,4,15];
+console.log(fizzBuzz(listTest));
 
 module.exports = fizzBuzz;
