@@ -44,10 +44,19 @@ const MORSE_CODE = {
   "----.": "9"
 };
 
-function decodeMorse(morse) {
-  // Your code here
+function decodeMorseChar(value) {
+  if ( value === "") {
+    return " ";
+  } else {
+    return MORSE_CODE[value];
+  }
 }
 
+function decodeMorse(morse) {
+  return morse.split(" ").map(decodeMorseChar).join("").replace(/\s\s/g, " ");
+}
+
+console.log(decodeMorse(".... . -.--   .--- ..- -.. ."));
 // Do not remove last lines, it is for tests
 // eslint-disable-next-line
 module.exports = decodeMorse;
