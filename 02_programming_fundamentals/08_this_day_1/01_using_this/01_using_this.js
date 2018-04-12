@@ -12,7 +12,10 @@ const person = {
   },
   introduceMyself: function() {
     // Your code here
+    return `Hello! I'm ${person.fullname()} and I'm ${this.age}`;
   }
 };
+
+console.log(person.introduceMyself());
 
 module.exports = person;
