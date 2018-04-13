@@ -2,33 +2,33 @@
 
 // Coffee Machine usage. Insert your code above this comment
 const machine = {
-  litersOfCoffee: 10,
-  expresso: function (){
-    if (this.litersOfCoffee >= 0.08){
-      this.litersOfCoffee -= 0.08;
-      // console.log(this.littersOfCoffee);
-      // console.log(this.littersOfCoffee -= 0.08);
-      return true;
-    } else {
-      return false;
-    }
-  },
-  longCoffee: function(){
-    if (this.litersOfCoffee >= 0.15){
-      this.litersOfCoffee -= 0.15;
-      return true;
-    } else {
-      return false;
-    }
-  },
-  fillWithLitersOfCoffee: function (coffeeLiter){
-    this.litersOfCoffee += coffeeLiter;
-  },
+  litersOfCoffee: 0,
+  expressoQauantity: 0.08,
+  longCoffeQuantity: 0.15,
 
+  serveCoffee: function ( quantity ) {
+    if (this.litersOfCoffee < quantity) {
+      return false;
+    }
+    this.litersOfCoffee -= quantity;
+    return true;
+  },
+  expresso: function (){
+    if (this.litersOfCoffee < this.expressoQauantity){
+      return false;
+    }
+    this.litersOfCoffee -= this.expressoQauantity;
+    return true;
+  },
+  // solution make it efficience for change value of expresso quantitues of coffee
+  longCoffee: function(){
+    return this.serveCoffee(this.longCoffeQuantity);
+  }
 };
-console.log(machine.litersOfCoffee);
-console.log(machine.expresso());
-console.log(machine.litersOfCoffee);
+
+//console.log(machine.litersOfCoffee);
+//console.log(machine.expresso());
+//console.log(machine.litersOfCoffee);
 
 // machine.fillWithLitersOfCoffee(10);
 // console.log(machine.expresso()); // => true
