@@ -24,7 +24,7 @@ function simpleGetWithParams(callback) {
 
   request(
     {
-      url: "https://postman-echo.com/get?foo=bar&program=camp2&people=Frieda&people=Francis",
+      url: "https://postman-echo.com/get?foo=bar&program=camp2&people[]=Frieda&people[]=Francis",
       method: "GET"
     },
     function (error, response, result) {
@@ -40,11 +40,9 @@ function displayResultWithParams(result) {
 
 simpleGetWithParams(displayResultWithParams);
 
-const date = new Date();
-const dateOk = date.getUTCFullYear()+ "-" + date.getUTCMonth() +"-"+ date.getDay();
-
 function validateTimestamp(callback) {
-
+  const date = new Date();
+  const dateOk = date.getFullYear()+ "-" + (date.getMonth() + 1) + "-" + date.getDay();
   request(
     {
       url: `https://postman-echo.com/time/valid?timestamp=${dateOk}`,
