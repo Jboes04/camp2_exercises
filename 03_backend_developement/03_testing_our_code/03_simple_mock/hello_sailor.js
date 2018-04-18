@@ -6,4 +6,6 @@ function helloSailor(who) {
   }
 }
 
+console.log(helloSailor());
+
 module.exports = helloSailor;
