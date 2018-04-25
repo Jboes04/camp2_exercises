@@ -1,0 +1,14 @@
+{
+  "name": "10_promises",
+  "version": "1.0.0",
+  "description": "promise",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "julian",
+  "license": "ISC",
+  "dependencies": {
+    "node-fetch": "^2.1.2"
+  }
+}

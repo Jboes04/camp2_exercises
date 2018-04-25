@@ -9,6 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "oauth": "^0.9.15"
+    "fetch": "^1.1.0",
+    "oauth": "^0.9.15",
+    "request": "^2.85.0"
   }
 }
