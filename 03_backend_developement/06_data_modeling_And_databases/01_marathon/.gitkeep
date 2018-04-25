@@ -1,0 +1,8 @@
+CREATE TABLE marathon_info (
+  race_name type VARCHAR(100) PRIMARY KEY,
+  date type date,
+  runner_name VARCHAR(100),
+  runner_bib integer,
+  runner.position integer,
+  racing.time type time,
+);
