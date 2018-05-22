@@ -1,0 +1,20 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+<div class="container">
+  <div class = "row">
+    <div class="card col">
+      <img class="img-thumbnail" src="https://decathlon.fr/media/{{card.image_path}}">
+    </div>
+    <div class="card col">
+      <div class="card-body">
+        <h4 class="card-text">{{card.title}}</h4>
+        <h5 class="card-text">{{card.min_price}}€</h5>
+        <h6 class="card-text">{{card.rating}}</h6>
+
+        <p class="card-text"> {{card.description}}</p>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
