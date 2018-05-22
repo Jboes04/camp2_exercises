@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1526907277817" clover="3.2.0">
+  <project timestamp="1526907277818" name="All files">
+    <metrics statements="15" coveredstatements="15" conditionals="0" coveredconditionals="0" methods="8" coveredmethods="8" elements="23" coveredelements="23" complexity="0" loc="15" ncloc="15" packages="1" files="1" classes="1">
+      <file name="01_aquarium.js" path="/Users/Buzz/Workspace/camp2_exercises/06_react_redux/01_es6_fundamentals/01_aquarium/01_aquarium.js">
+        <metrics statements="15" coveredstatements="15" conditionals="0" coveredconditionals="0" methods="8" coveredmethods="8"/>
+        <line num="3" count="4" type="stmt"/>
+        <line num="4" count="4" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="31" count="5" type="stmt"/>
+        <line num="32" count="5" type="stmt"/>
+        <line num="33" count="5" type="stmt"/>
+        <line num="38" count="3" type="stmt"/>
+        <line num="42" count="1" type="stmt"/>
+      </file>
+    </metrics>
+  </project>
+</coverage>
