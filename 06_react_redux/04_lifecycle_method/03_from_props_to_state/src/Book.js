@@ -14,6 +14,7 @@ class Book extends Component {
         this.setState({book: Object.values(bookData)[0]})
       })
   }
+
   render() {
     return (
       <div>
@@ -29,6 +30,7 @@ class Book extends Component {
       </div>
     )
   }
+
 }
 
 export default Book;
